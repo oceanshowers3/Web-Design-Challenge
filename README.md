@@ -34,9 +34,7 @@ The website must consist of 7 pages total, including:
 
   - Displays a responsive table containing the data used in the visualizations.
 
-    - The table must be a bootstrap table component. Hint
-
-    - The data must come from exporting the .csv file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called   to_html that allows you to generate a HTML table from a pandas dataframe. See the documentation here
+ 
 
 
 
