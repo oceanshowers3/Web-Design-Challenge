@@ -14,10 +14,10 @@
 </head>
 <body>
     
-<!-- Setting up nav bar -->
+    <!-- Setting up nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand text-black" href="index.html" >Latitude</a>
+            <a class="navbar-brand text-white" href="index.html" >Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,10 +29,10 @@
                             Plots
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="temp.html">Max Temperature</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -46,25 +46,19 @@
         </div>
     </nav>
     
-    <!--setting up container, rows, columns, and images -->
+    <!--create container, rows and columns and add images -->
     <div class="container content">    
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Cities' Latititude: A Variable Comparison </h3>
+                    <h3>Summary: Latitude vs. X </h3>
                     <hr>
-                    <p>For this project, we set out to analyze how a city's latitude 
-                        impacts different aspects of the city's weather.</p> 
+                    <div class="thumbnail">
+                        <img class="img-thumbnail float-left" src="Resources/assets/images/Fig1.png " width="50%" alt="temperature">
+                    </div>
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p> 
                     
-                    <p>To accomplish this, we used the OpenWeatherApp API to compile a list of 541 cities 
-                        and their associated weather data. 
-                        Weather data collected includes maximum temperature (F), humidity (%), cloudiness (%), 
-                        and wind speed (mph).
-                        Once our city dataset was created, we used MatPlotLib to display the relationships
-                        between latitude and weather variables. Linear regressions on both the north and south
-                        hemispheres were also performed.</p>
-
-                    <p>Our site includes these analyses and their explications, as well as the dataset used to create these analyses.</p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
                 </div>
             </div>
             <!--visualization adjustments-->
@@ -74,19 +68,19 @@
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="max_temp.html"><img src="Resources/assets/city_lat_vs_max_temp.png" width="100%"  alt="max temp">
+                            <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%"  alt="temperature">
                             </a> 
                         </div>
                         <div class="col-3 col-md-6">
-                            <a href="humidity.html"><img src="Resources/assets/city_lat_vs_humidity.png" width="100%" alt="humidity"></a>
-                        </div>
-                    
-                        <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img src="Resources/assets/city_lat_vs_cloudiness.png" width="100%"  alt="cloudiness"></a>
+                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
                         </div>
 
                         <div class="col-3 col-md-6">
-                            <a href="wind_speed.html"><img src="Resources/assets/city_lat_vs_wind_speed.png"width="100%"  alt="wind speed"></a>
+                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                        </div>
+
+                        <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
                         </div>
                     </div>
                 </div>
@@ -94,5 +88,10 @@
         </div>
     </div>
     
+    <!-- Footer -->
+    <footer class="page-footer font-small footer-dark">
+        <div class="footer-copyright text-center py-3">© Copyright Coding Bootcamp 2019
+        </div>      
+    </footer>
 </body>
 </html>

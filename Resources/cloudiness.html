@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Summary</title>
+    <title>Cloudiness</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,15 +13,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<!-- Setting up nav bar -->
+    <!-- Setting up nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand text-black" href="index.html" >Latitude</a>
+            <a class="navbar-brand text-black" href="index.html">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+                
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
                     <li class="nav-item dropdown">
@@ -43,56 +42,51 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> 
     </nav>
-    
-    <!--setting up container, rows, columns, and images -->
-    <div class="container content">    
+    <!--cloudiness-->
+    <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Cities' Latititude: A Variable Comparison </h3>
+                    <h3>Cloudiness</h3>
                     <hr>
-                    <p>For this project, we set out to analyze how a city's latitude 
-                        impacts different aspects of the city's weather.</p> 
-                    
-                    <p>To accomplish this, we used the OpenWeatherApp API to compile a list of 541 cities 
-                        and their associated weather data. 
-                        Weather data collected includes maximum temperature (F), humidity (%), cloudiness (%), 
-                        and wind speed (mph).
-                        Once our city dataset was created, we used MatPlotLib to display the relationships
-                        between latitude and weather variables. Linear regressions on both the north and south
-                        hemispheres were also performed.</p>
-
-                    <p>Our site includes these analyses and their explications, as well as the dataset used to create these analyses.</p>
+                    <img src="Resources\assets\city_lat_vs_cloudiness.png" width="100%" alt="city_lat_vs_cloudiness">
+                    <br>
+                    <p>The plot describes the relationship between a city's latitude and the city's cloudiness (%).  
+                        There appears to be no relationship between a city's latitude and cloudiness. 
+                        Further analysis was conducted, 
+                        and linear regressions of both the north and south hemispheres were performed; 
+                        Pearson's r values were .1 and .35, respectively. 
+                        This further supports the hypothesis that 
+                        there is no relation between latitude and cloudiness.</p>
                 </div>
             </div>
-            <!--visualization adjustments-->
+            <!--visualizations-->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Visualizations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="max_temp.html"><img src="Resources/assets/city_lat_vs_max_temp.png" width="100%"  alt="max temp">
-                            </a> 
-                        </div>
-                        <div class="col-3 col-md-6">
-                            <a href="humidity.html"><img src="Resources/assets/city_lat_vs_humidity.png" width="100%" alt="humidity"></a>
-                        </div>
-                    
-                        <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img src="Resources/assets/city_lat_vs_cloudiness.png" width="100%"  alt="cloudiness"></a>
+                            <a href="max_temp.html"><img src="Resources/assets/city_lat_vs_max_temp" width="100%" alt="max temp"></a>
                         </div>
 
                         <div class="col-3 col-md-6">
-                            <a href="wind_speed.html"><img src="Resources/assets/city_lat_vs_wind_speed.png"width="100%"  alt="wind speed"></a>
+                            <a href="humidity.html"><img src="Resources/assets/city_lat_vs_humidity" width="100%" alt="humidity"></a>
+                        </div>
+                    
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img class="pic" src="Resources/assets/city_lat_vs_cloudiness.png" width="100%" alt="cloudiness"></a>
+                        </div>
+                        
+                        <div class="col-3 col-md-6">
+                            <a href="wind_speed.html"><img src="Resources/assets/city_lat_vs_wind_speed" width="100%" alt="wind speed"></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div>    
     </div>
-    
 </body>
 </html>
