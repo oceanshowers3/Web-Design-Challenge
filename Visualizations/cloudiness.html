@@ -12,11 +12,12 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Setting up nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html">Latitude</a>
+            <a class="navbar-brand text-black" href="index.html">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,10 +29,10 @@
                             Plots
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -44,38 +45,44 @@
             </div>
         </div> 
     </nav>
-    <!--cloudiness-->
+    <!-- cloudiness -->
     <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
                     <h3>Cloudiness</h3>
                     <hr>
-                    <img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness">
+                    <img src="Resources\assets\city_lat_vs_cloudiness.png" width="100%" alt="city_lat_vs_cloudiness">
                     <br>
-                    <p>The plot describes the relationship between a city's latitude and the city's cloudiness (%). There appears to be no relationship between a city's latitude and cloudiness.</p>
+                    <p>This plot describes the relationship between a city's latitude and the city's cloudiness (%).  
+                        There appears to be no relationship between a city's latitude and cloudiness. 
+                        Further analysis was conducted, 
+                        and linear regressions of both the north and south hemispheres were performed; 
+                        Pearson's r values were .1 and .35, respectively. 
+                        This further supports the hypothesis that 
+                        there is no relation between latitude and cloudiness.</p>
                 </div>
             </div>
-            <!--visualizations-->
+            <!-- visualizations -->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Visualizations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temperature"></a>
+                            <a href="max_temp.html"><img src="Resources/assets/city_lat_vs_max_temp" width="100%" alt="max temp"></a>
                         </div>
 
                         <div class="col-3 col-md-6">
-                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                            <a href="humidity.html"><img src="Resources/assets/city_lat_vs_humidity" width="100%" alt="humidity"></a>
                         </div>
                     
                         <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img class="pic" src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
+                            <a href="cloudiness.html"><img class="pic" src="Resources/assets/city_lat_vs_cloudiness.png" width="100%" alt="cloudiness"></a>
                         </div>
                         
                         <div class="col-3 col-md-6">
-                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="windspeed"></a>
+                            <a href="wind_speed.html"><img src="Resources/assets/city_lat_vs_wind_speed" width="100%" alt="wind speed"></a>
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cloudiness</title>
+    <title>Wind Speed</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Setting up nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,46 +43,45 @@
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </nav>
-    <!--cloudiness-->
+    <!-- wind speed -->
     <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Cloudiness</h3>
+                    <h3>Wind Speed</h3>
                     <hr>
-                    <img src="Resources\assets\city_lat_vs_cloudiness.png" width="100%" alt="city_lat_vs_cloudiness">
+                    <img src="Resources/assets/city_lat_vs_wind_speed.png" width="100%" alt="wind_speed">
                     <br>
-                    <p>The plot describes the relationship between a city's latitude and the city's cloudiness (%).  
-                        There appears to be no relationship between a city's latitude and cloudiness. 
+                    <p>This plot describes the relationship between a city's latitude and the city's wind speed (mph).  
+                        There appears to be no relationship between a city's latitude and wind speed. 
                         Further analysis was conducted, 
                         and linear regressions of both the north and south hemispheres were performed; 
-                        Pearson's r values were .1 and .35, respectively. 
-                        This further supports the hypothesis that 
+                        Pearson's r values were .07 and -.18, respectively. This further supports the hypothesis that 
                         there is no relation between latitude and cloudiness.</p>
                 </div>
             </div>
-            <!--visualizations-->
+            <!-- visualizations -->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Visualizations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="max_temp.html"><img src="Resources/assets/city_lat_vs_max_temp" width="100%" alt="max temp"></a>
-                        </div>
-
-                        <div class="col-3 col-md-6">
-                            <a href="humidity.html"><img src="Resources/assets/city_lat_vs_humidity" width="100%" alt="humidity"></a>
-                        </div>
-                    
-                        <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img class="pic" src="Resources/assets/city_lat_vs_cloudiness.png" width="100%" alt="cloudiness"></a>
+                            <a href="max_temp.html"><img src="Resources/assets/images/city_lat_vs_max_temp.png" width="100%" alt="max temp"></a>
                         </div>
                         
                         <div class="col-3 col-md-6">
-                            <a href="wind_speed.html"><img src="Resources/assets/city_lat_vs_wind_speed" width="100%" alt="wind speed"></a>
+                            <a href="humidity.html"><img src="Resources/assets/images/city_lat_vs_humidity.png" width="100%" alt="humidity"></a>
+                        </div>
+                        
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="Resources/assets/images/city_lat_vs_cloudiness.png" width="100%" alt="cloudiness"></a>
+                        </div>
+                        
+                        <div class="col-3 col-md-6">
+                            <a href="wind_speed.html"><img class="pic" src="Resources/assets/city_lat_vs_wind_speed.png" width="100%" alt="windspeed"></a>
                         </div>
                     </div>
                 </div>
