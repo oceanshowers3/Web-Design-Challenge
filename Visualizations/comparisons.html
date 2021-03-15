@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Humidity</title>
+    <title>Comparison</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- Setting up nav bar -->
+    <!--nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand text-black" href="index.html">Latitude</a>
@@ -45,53 +45,33 @@
             </div>
         </div>
     </nav>
-
-    <div class="container content">
+    
+    <!-- setting up container to add plot pngs -->
+    <div class="container content bg-white">
+        <h3>Cities' Latititude: A Variable Comparison</h3>
+        <hr>
+        <p>You can click on any plot to get further information regarding analysis.</p>
         <div class="row">
-            <div class="col-md-8">
-                <div class="col-md-12">
-                    <h3>Humidity</h3>
-                    <hr>
-                    
-                    <img src="Resources/assets/city_lat_vs_humidity.png" width="100%" alt="humidity">
-                    <br>
-                    <p>This plot describes the relationship between a city's latitude and the city's humidity (%).  
-                        There appears to be no relationship between a city's latitude and cloudiness. 
-                        Further analysis was conducted, 
-                        and linear regressions of both the north and south hemispheres were performed; 
-                        Pearson's r values were .41 and .19, respectively. 
-                        While there initially appeared to be no correlation when the north and south hempisphere data
-                        was combined, the regression revealed a moderate, positive correlation between 
-                        latitude and cloudiness for the northern hempisphere, but not the southern hemisphere.</p>
-                </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Max Teperature</h3>
+                <a href="max_temp.html"><img width="100%" src="Resources/assets/city_lat_vs_max_temp.png"></a>   
             </div>
-
-            <!-- visualizations -->            
-            <div class="col-md-4">
-                <div class="col-md-12">
-                    <h3>Visualizations</h3>
-                    <hr>
-                    <div class="row">
-                        <div class="col-3 col-md-6">
-                            <a href="max_temp.html"><img class="pic" src="Resources/assets/city_lat_vs_max_temp.png" width="100%" alt="max temp">
-                            </a>
-                        </div>
-                        
-                        <div class="col-3 col-md-6">
-                            <a href="humidity.html"><img class="pic" src="Resources/assets/city_lat_vs_humidity.png" width="100%" alt="humidity"></a>
-                        </div>
-                    
-                        <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img class="pic" src="Resources/assets/city_lat_vs_cloudiness.png" width="100%" alt="cloudiness"></a>
-                        </div>
-                        
-                        <div class="col-3 col-md-6">
-                            <a href="wind_speed.html"><img class="pic" src="Resources/assets/city_lat_vs_wind_speed.png" width="100%" alt="wind speed"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>    
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Humidity</h3>
+                <a href="humidity.html"><img width="100%" src="Resources/assets/city_lat_vs_humidity.png"></a>  
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Cloudiness </h3>
+                <a href="cloudiness.html"><img width="100%" src="Resources/assets/city_lat_vs_cloudiness.png"></a>   
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Wind Speed</h3>
+                <a href="wind_speed.html"><img width="100%" src="Resources/assets/city_lat_vs_wind_speed.png"></a>  
+            </div>
+        </div>   
     </div>
 </body>
 </html>

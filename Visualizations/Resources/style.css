@@ -28,12 +28,12 @@ body{
     border: none;
 }
 
-/* image border styling*/
+/* image border */
 .pic{
     border: 3px solid  rgb(52, 156, 139);
 }
 
-/* navbar styling*/
+/* navbar */
 .navbar{
     padding-top:0px;
     padding-bottom: 0px;
@@ -48,7 +48,7 @@ body{
     margin: 0;
 }
 
-/* content styling*/
+/* content */
 .content {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -59,10 +59,10 @@ body{
     margin-top: 15px;
 }
 
-/* small screen adjustments*/
+/* adjust for small screens */
 @media(max-width:767px){
     .navbar.bg-light{
-        background-color: rgb(52, 156, 139)!important;    
+        background-color: rgb(52, 156, 139);    
     }
 
     .navbar-collapse{
